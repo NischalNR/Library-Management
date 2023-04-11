@@ -1,0 +1,36 @@
+<h2>All Books</h2>
+
+<form action="" method="get">
+
+  <div>
+    <label for="name">Title
+      <input type="text" name="title" id="titlename" placeholder="Book Name" />
+    </label>
+  </div>
+
+  <div>
+    <label for="publishedBefore">Published Before Date</label>
+    <input type="date" name="publishedBefore" id="publishedBefore" />
+  </div>
+
+  <div>
+    <label for="publishedAfter">Published After Date</label>
+    <input type="date" name="publishedAfter" id="publishedAfter" />
+  </div>
+
+  <button type="submit">Search</button>
+
+</form>
+
+<h2>List of Books</h2>
+{{#each books}}
+  <div class="booklist">
+    <div><h4>{{title}}</h4></div>
+    <div><img
+        src={{trimString cover.0.path}}
+        alt=""
+        height="200px"
+        width="200px"
+      /></div>
+  </div>
+{{/each}}

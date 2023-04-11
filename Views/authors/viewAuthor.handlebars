@@ -1,0 +1,12 @@
+<h2>Author view</h2>
+{{#if books}}
+  <h3>{{author.name}}</h3>
+  {{#each books}}
+    <div><img
+        src={{trimString cover.0.path}}
+        alt=""
+        height="200px"
+        width="200px"
+      /></div>
+  {{/each}}
+{{/if}}

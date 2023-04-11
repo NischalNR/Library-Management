@@ -1,0 +1,9 @@
+<h2>Edit Author</h2>
+
+<form action="/authors/{{author._id}}?_method=PUT" method="post" enctype="application/x-www-form-urlencoded">
+{{>_form}}
+
+<a href="/authors">Cancel</a>
+<button type="submit">Edit</button>
+
+</form>

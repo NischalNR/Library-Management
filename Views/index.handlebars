@@ -1,0 +1,12 @@
+<h1>Recently Added</h1>
+{{#each books}}
+  <div class="booklist">
+    <div><h4>{{title}}</h4></div>
+    <div><img
+        src={{trimString cover.0.path}}
+        alt=""
+        height="200px"
+        width="200px"
+      /></div>
+  </div>
+{{/each}}
